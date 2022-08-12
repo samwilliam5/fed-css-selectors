@@ -1,0 +1,87 @@
+/* universal selectors */
+*{
+    background-color: #ccc;
+    color: white;
+}
+/* element selectors */
+h1{
+background-color: red;
+}
+/* /* id selectors */
+#h3{
+    background-color: green;
+}
+/*class selectors*/
+.h2{
+    background-color: yellow;
+}
+/*group selectors*/
+h4,h5,h6{
+    background-color: blue;
+}
+/* Descendant selector */
+ul li{
+    color: aqua;
+}
+
+/* child selectors */
+ul>li{
+    background-color: green;
+}
+
+/*pesudo selectors*/
+p:first-child{
+    background-color: red;
+}
+p:last-child{
+    background-color: blue;
+}
+p:nth-child(2){
+    background-color: green;
+}
+
+
+p:first-letter{
+    color: red;
+}
+
+p:first-line{
+    background-color: yellow;
+}
+
+
+/*attribute selectors */
+h3[title] {
+    background-color: yellow;
+  }
+
+  a[title] {
+    background-color: red;
+  }
+
+/* directly folowed by div */
+div + p{
+    background-color: palevioletred;
+}
+
+
+p::before{
+    content: '"';
+}
+p::after{
+    content: '"';
+}
+ol li::marker{
+    
+    color: red;
+}
+button:hover{
+    background-color: red;
+}
+button:active{
+    background-color: red;
+} 
+
+ button:focus{
+    background-color: red;
+}   
